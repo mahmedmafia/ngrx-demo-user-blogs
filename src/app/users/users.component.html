@@ -1,0 +1,7 @@
+  <div *ngFor="let user of (users$ |async)"   style="margin:20px;padding:15px;">
+    <h4>{{user.name}}</h4>
+    <p>{{user.username}}</p>
+    <p>{{user.email}}</p>
+    <button (click)="deleteUser(user.id)">Delete User</button>
+  </div>
+
